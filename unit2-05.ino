@@ -18,14 +18,8 @@ void setup()
 
 void loop()
 {
-  // Set the angle from 0 to 180
-  for (int angle = 0; angle < 180; angle++) {
-    servo.write(angle);
-    delay(15);
-  }
-  // Set the angle from 180 to 0
-  for (int angle = 180; angle > 0; angle--) {
-    servo.write(angle);
-    delay(15);
-  }
+  servo.write(180);
+  delay(1000);
+  servo.write(0);
+  delay(1000);
 }
